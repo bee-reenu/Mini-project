@@ -1,34 +1,127 @@
 <html>
     <head>
         <title> LoginPage</title>
-        <link rel="stylesheet" href="styles.css">
+        <style>
+            body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #aec3b0;
+    font-family: Arial, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    
+}
+.navbar{
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    color: black;
+    background-color: fefae0;
+}
+
+.navbar a {
+float: left;
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+.navbar a.text {
+float: none;
+display: inline-block;
+color: black;
+font-size: 30;
+text-align: center;
+padding: 50;
+}
+
+.navbar .login-form {
+float: right;
+padding: 50;
+
+}
+
+.navbar input[type="submit"] {
+background-color: #4CAF50;
+color: white;
+padding: 10px 15px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+nav {
+padding: 10px;
+text-align: center; 
+width: 100%;
+overflow: hidden;
+background-color: #333; 
+position: fixed; 
+}
+
+nav a {
+float: left;
+display: block;
+color: white;
+padding: 10px;
+}
+nav a:hover{
+background-color: #ddd; 
+color: #333;
+
+}
+.slider-container {
+width: 800px; 
+height: 500px; 
+display: flex;
+overflow: auto;
+scroll-snap-type: x mandatory;
+}
+.slider-container .slide{
+scroll-snap-align: start;
+}
+.slider-container img {
+width: 800px; 
+height: 100%; 
+object-fit: cover;
+}
+
+
+        </style>
         <div>
             <div class="navbar">
                 <a href="#" class="logo"><img src="Logo.png" alt></a>
                 <a href="#" class="text">Vijayanagar Institute of Medical
-                    Sciences</a>
+                    Sciences</a> 
                 <div class="login-form">
                     <form action="Login.html" method="post">
                         <input type="submit" value="Login">
                     </form>
-                </div>
+                </div> 
             </div>
-            <nav class="nav">
-                <a href="#">Home</a>
-                <a href="#">Specilists</a>
-                <a href="#">Insurance</a>
-                <a href="#">About us</a>
-            </nav>
-            <div class="slider-container">
-                <div class="slide">
-                    <img src="img1.jpeg">
-                </div>
-                <div class="slide">
-                    <img src="img2.jpeg">
-                </div>
-                <div class="slide">
-                    <img src="img3.jpeg">
-                </div>
-            </body>
-        </head>
-    </html>
+                <nav class="nav">
+                    <a href="#">Home</a>
+                    <a href="#">Specilists</a>
+                    <a href="#">Insurance</a>
+                    <a href="#">About us</a>
+                </nav>
+                <div class="slider-container">
+                    <div class="slide">
+                        <img src="img1.jpeg">
+                    </div>
+                    <div class="slide">
+                        <img src="img2.jpeg">
+                    </div>
+                    <div class="slide">
+                        <img src="img3.jpeg">
+                    </div>
+                </body>
+            </head>
+        </html>
