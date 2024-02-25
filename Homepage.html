@@ -59,7 +59,10 @@ cursor: pointer;
 
 nav {
 padding: 10px;
-text-align: center; 
+align-self:flex-start;
+margin-top: 150px;
+display: flex;
+text-align: top; 
 width: 100%;
 overflow: hidden;
 background-color: #333; 
@@ -78,11 +81,14 @@ color: #333;
 
 }
 .slider-container {
-width: 800px; 
-height: 500px; 
-display: flex;
+width: 900px; 
+height: 550px; 
 overflow: auto;
+display: flex;
 scroll-snap-type: x mandatory;
+box-sizing: border-box;
+  text-align: center;
+  line-height: 100%;
 }
 .slider-container .slide{
 scroll-snap-align: start;
@@ -93,19 +99,40 @@ height: 100%;
 object-fit: cover;
 }
 
+.small-box {
+  width: 50%;
+  height: 150px;
+  padding: 10px;
+  background-color: #eee;
+  
+}
+.card {
+width: 300px;
+padding: 15;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+background-color: #e9f5db;
+border-radius: 8px;
+border: 1px solid #ccc;
+box-sizing: border-box;
+text-align: center;
+line-height: 150px;
+}
+
 
         </style>
-        <div>
-            <div class="navbar">
-                <a href="#" class="logo"><img src="Logo.jpeg" alt></a>
-                <a href="#" class="text">Vijayanagar Institute of Medical
-                    Sciences</a> 
-                <div class="login-form">
-                    <form action="Login.html" method="post">
-                        <input type="submit" value="Login">
-                    </form>
-                </div> 
-            </div>
+        <body>
+            <div>
+                <div class="navbar">
+                    <a href="#" class="logo"><img src="Logo.png" alt></a>
+                    <a href="#" class="text">Vijayanagar Institute of Medical
+                        Sciences</a>
+                    <div class="login-form">
+                        <form action="Login.html" method="post">
+                            <input type="submit" value="Login">
+                        </form>
+                    </div>
+                </div>
+                </div>
                 <nav class="nav">
                     <a href="#">Home</a>
                     <a href="#">Specilists</a>
@@ -125,6 +152,14 @@ object-fit: cover;
                     <div class="slide">
                         <img src="Vims.jpg">
                     </div>
-                </body>
-            </head>
-        </html>
+                </div>
+                <div class="card, small-box">
+                    <h1> Attention!! </h1>
+                    <h2> Ms.Devishetty is visiting today</h2>
+                    <h4> Contonment, Ballari- 583104</h4>
+                </div>
+
+            </body>
+
+        </head>
+    </html>
