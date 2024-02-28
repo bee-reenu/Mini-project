@@ -1,35 +1,72 @@
-<html>
-    <head>
-        <style>
-           .container {
-  display: flex;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Sample</title>
+  <style>
+    body{ 
+      display: flex;
+      font-family: Arial, sans-serif;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+      background-color: #ade8f4;
+      align-items: center;
+    }
+    .card{
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      background-color: #fefee3;
+      border-radius: 8px;
+      width: 350px;
+      padding: 20px;
+    }
+    .card h1{
+      text-align: center;
+      padding: 10px;
+    }
+    .card label{
+      margin-bottom: 8px;
+    }
+    .card input{
+      padding: 10px;
+      margin-bottom: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .card form{
+      display: flex;
+      flex-direction: column;
+    }
+    .card button{
+      background-color: #ade8f4;
+      border: none;
+      border-radius: 4px;
+      padding: 10px;
+      cursor: pointer;
+    }
+    .card button:hover{
+      background-color: #a8dadc;
+    }
 
-.big-box {
-  width: 50%;
-  height: 300px;
-  background-color: #ddd;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-  text-align: center;
-  line-height: 300px;
-}
-
-.small-box {
-  width: 50%;
-  height: 150px;
-  background-color: #eee;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-  text-align: center;
-  line-height: 150px;
-}
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <div class="big-box">Big Box</div>
-            <div class="small-box">Small Box</div>
-          </div>
-    </body>
+  </style>
+</head>
+<body>
+  <form action="">
+    <div class="card">
+      <h1> Hospital Database management system </h1>
+      <label for="Username"> Username </label>
+      <input type="text" id="Username" required>
+      <br>
+      <label for="email"> Email ID </label>
+      <input type="email" id="email" required placeholder="Example@gmail.com">
+      <br>
+      <button> Sign In </button>
+    </div>
+  </form>
+  <div>
+    <h2> OR </h2>
+  </div>
+</body>
 </html>
