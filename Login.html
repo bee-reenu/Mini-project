@@ -69,14 +69,29 @@ background-color: #87986a;
 }
 .intro{
 text-align: center;
-
 }
+.image{
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+.image img{
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  border: 10px;
+}
+
     </style>
   </head>
   <body>
     <div class="intro">
       <h3>Welcome to</h3>
-      <h1> Venkateshwara Institute of Medical Sciences</h1>
+      <h1> Vijayanagara  Institute of Medical Sciences</h1>
     </div>
     <div class="card">
       <h2>Login</h2>
@@ -90,6 +105,11 @@ text-align: center;
 
         <button type="submit">Login</button>
       </form>
+    </div>
+    <div >OR</div>
+    <div class="image">
+      <button class="social-login" onclick="signInWithGoogle()"> <img src="Google.png" alt="Google"></button>
+      <button class="social-login" onclick="signInWithFacebook()"><img src="Facebook.jpeg" alt="Facebook"></button>  
     </div>
   </body>
 
